@@ -1,4 +1,4 @@
-M mysql:5.7
+FROM mysql:5.7
 ENV MYSQL_DATABASE=wordpress 
 RUN apt-get update && \
 apt-get install -y sed
