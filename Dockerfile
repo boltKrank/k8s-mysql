@@ -1,5 +1,6 @@
 FROM mysql:5.7
-ENV MYSQL_DATABASE=wordpress \
+ENV MYSQL_ROOT_PASSWORD=puppetlabs \
+    MYSQL_DATABASE=wordpress \
     MYSQL_USER=wordpress \
     MYSQL_PASSWORD=wordpress
 RUN apt-get update && \
