@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+ name: k8s-mysql
+ namespace: wordpress-dev
+spec:
+ selector:
+  deployment: k8s-mysql
+ports:
+- name: default
+  protocol: TCP
+  port: 3306
+  targetPort: 3306
